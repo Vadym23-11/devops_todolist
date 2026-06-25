@@ -16,7 +16,7 @@ WORKDIR /app
 
 COPY --from=builder /install /usr/local
 
-COPY .. .
+COPY . .
 
 RUN python manage.py migrate
 
